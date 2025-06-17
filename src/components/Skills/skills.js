@@ -1,8 +1,8 @@
 import React from "react";
 import './skills.css';
-import DataScienceLogo from '../../assets/DataScienceLogo.png';
-import DataEngineerLogo from '../../assets/DataEngineerLogo.png';
-import DataAnalystLogo from '../../assets/DataAnalystLogo.png';
+// import DataScienceLogo from '../../assets/DataScienceLogo.png';
+// import DataEngineerLogo from '../../assets/DataEngineerLogo.png';
+// import DataAnalystLogo from '../../assets/DataAnalystLogo.png';
 
 import { FaBrain, FaDatabase, FaChartBar } from "react-icons/fa";
 
