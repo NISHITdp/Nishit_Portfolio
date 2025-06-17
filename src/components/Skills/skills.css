@@ -70,7 +70,7 @@
     }
 }
 
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
     .skillBarText>p {
         font-size: 3vw;
     }
@@ -81,5 +81,32 @@
     .skillBarText>h2 {
         font-size: 5vw;
 
+    }
+} */
+
+
+@media screen and (max-width: 480px) {
+    .skillBarText > p {
+        font-size: 3.8vw; /* slightly larger for readability */
+        line-height: 1.4;
+    }
+    .skillBarText > h2 {
+        font-size: 5.5vw; /* slightly larger for section title clarity */
+        margin-bottom: 0.5rem;
+    }
+
+    .skillBarImg {
+        height: 2rem;
+        width: 2rem;
+        margin-right: 1rem;
+    }
+
+    .skillBar {
+        padding: 1rem 1.25rem; /* reduce padding for tight screens */
+    }
+
+    .skillDesc {
+        font-size: 4vw; /* if you're showing it on small screens */
+        padding: 0 1rem;
     }
 }
