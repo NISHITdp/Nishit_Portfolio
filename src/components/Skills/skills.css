@@ -84,7 +84,7 @@
     }
 } */
 
-
+/* COME BACK AT STYLING THE FONT ICONS FOR MOBILE PHONES */
 @media screen and (max-width: 480px) {
     .skillBarText > p {
         font-size: 3.8vw; /* slightly larger for readability */

@@ -1,8 +1,8 @@
-#works {
+ #works {
     margin: 0 auto;
     min-height: calc(100vh - 4rem);
     width: 100vw;
-    max-width: 85rem;
+    max-width: 90rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,38 +17,216 @@
 
 }
 
-.worksDesc {
+.workDesc {
     font-weight: 300;
     font-size: 1rem;
-    max-width: 45rem;
+    max-width: 85rem;
 }
 
+.worksTitle {
+    margin: 1rem 0;
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+}
+
+/* Description Text */
+.workDesc {
+    font-weight: 300;
+    font-size: 1.2rem;
+    max-width: 85rem;
+    text-align: center;
+    padding: 0 2rem;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+} */
+
+/* Company Logos Container */
 .worksImgs {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0;
     max-width: 65rem;
 }
 
+/* Company Logo Image */
 .worksImg {
-    object-fit: cover;
-    height: 2rem;
-    margin: 0.5rem;
+    height: 3rem;
+    object-fit: contain;
 }
 
+/* Role Sections Heading (e.g., Full-Time Roles) */
+.worksSubheading {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-top: 3rem;
+    color: #CBA135;
+    text-align: center;
+    width: 100%;
+}
+
+/* styling each card */
+
+.workTitle {
+    margin: 1rem 0 0.5rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+/* Button inside Card */
+.workCard .workBtn {
+    margin: 0 auto 1rem auto;
+    /* padding: 0.5rem 1.5rem; */
+    background: #CBA135;
+    color: black;
+    border: none;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.workCard .workBtn:hover {
+    background-color: #e3c05e;
+}
+
+/* styling each card ends */
+
+/* Container for Cards */
+.worksCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+/* Individual Job Card */
+.workCard {
+    width: 20rem;
+    height: 24rem;
+    background: #2e2e2e;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+}
+/*---*/
+.workCardImgWrapper {
+    width: 90%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 1rem;
+}
+
+.workCard:hover {
+    transform: translateY(-5px);
+}
+
+/* Image inside Card */
+.workCard img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 0.5rem;
+}
+
+/* Job Title Text */
+.workCard span {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+    position: relative;
+    display: inline-block;
+}
+
+.workCard span::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #CBA135;
+    transition: width 0.3s ease-in-out;
+}
+
+.workCard:hover span::after {
+    width: 100%;
+}
+
+/* CTA Button */
 .workBtn {
-    padding: 0.5rem 2.5rem;
+    padding: 0.75rem 2rem;
     border: none;
     background: white;
+    color: black;
     border-radius: 2rem;
     font-size: 1rem;
     margin: 3rem 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-@media scree and (max-width: 585px) {
+.workBtn:hover {
+    background-color: #CBA135;
+    color: black;
+}
+
+@media screen and (max-width: 768px) {
+    .workCard {
+        width: 18rem;
+        height: 20rem;
+    }
+    .workCard .workBtn {
+        border-radius: 1.5rem;
+        font-size: 0.7rem;
+        transition: background 0.3s ease;
+    }
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+    .worksCards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .workCard {
+        width: 90%;
+        height: auto;
+    }
+
+    .workCard img {
+        height: 8rem;
+    }
+
+    .workCard span {
+        font-size: 1rem;
+    }
+
     .worksImg {
-        height: 48vw;
+        height: 2.5rem;
+    }
+
+    .workDesc {
+        font-size: 0.9rem;
+    }
+
+    .worksTitle {
+        font-size: 2.5rem;
     }
 }

@@ -1,7 +1,7 @@
 #contactPage {
     min-height: calc(100vh - 4rem);
     width: 100vw;
-    max-width: 80rem;
+    max-width: 90rem;
     margin: 0 auto;
     text-align: center;
     display: flex;
@@ -17,7 +17,8 @@
 
 .projectDesc {
     font-weight: 300;
-    font-size: 1rem;
+    font-size: 1.3rem;
+    max-width: 85rem;
 }
 
 .projectImgs {
@@ -38,10 +39,66 @@
     padding: 2rem;
 }
 
+.projectCards {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.projectCard {
+    width: 33rem;
+    background-color: #2e2e2e;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease;
+}
+
+.projectCard:hover {
+    transform: translateY(-5px);
+}
+
+.projectCardTitle {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.projectCardDesc {
+    font-size: 0.95rem;
+    font-weight: 300;
+    color: #ccc;
+    margin-bottom: 1.5rem;
+}
+
+.projectBtn {
+    padding: 0.5rem 1.5rem;
+    background-color: #CBA135;
+    color: black;
+    border: none;
+    border-radius: 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.projectBtn:hover {
+    background-color: #e3c05e;
+}
+
+
 .contactDesc {
     padding: 1rem;
-    font-size: medium;
     font-weight: 300;
+    font-size: 1.3rem;
+    max-width: 85rem;
 }
 
 .contactForm {

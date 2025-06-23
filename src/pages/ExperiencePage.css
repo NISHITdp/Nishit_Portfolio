@@ -1,0 +1,111 @@
+/* ---------- GENERAL PAGE WRAPPER ---------- */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  overflow-x: hidden;  /* ✅ This prevents horizontal scroll */
+}
+
+.experienceSplitPage {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  padding: 2rem;
+  box-sizing: border-box;
+  max-width: 90rem;
+  margin: 0 auto;
+  background-color: #000; /* full-width black backdrop */
+  color: #fff;
+  min-height: calc(100vh - 4rem); /* keeps page tall even with little text */
+}
+
+/* ---------- LEFT COLUMN ---------- */
+.experienceLeft {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.experienceLeft h1 {
+  font-size: 2.2rem;
+  color: #cba135;
+  margin-bottom: 1rem;
+}
+
+.experienceIntro {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.experienceList {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+/* ---------- RIGHT COLUMN ---------- */
+.experienceRight {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experienceImageRight {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 1rem;
+  object-fit: cover;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.35);
+}
+
+.experienceReflection {
+  font-size: 1rem;
+  font-style: italic;
+  color: #ccc;
+  margin-top: 2rem;
+  line-height: 1.6;
+  text-align: left;
+  max-width: 95%;
+}
+
+
+
+/* ---------- BACK BUTTON ---------- */
+.backBtn {
+  display: inline-block;
+  padding: 0.6rem 1.6rem;
+  background-color: #cba135;
+  color: #000;
+  text-decoration: none;
+  border-radius: 1rem;
+  font-weight: 600;
+  transition: background 0.3s ease;
+  max-width: fit-content;
+}
+
+.backBtn:hover {
+  background-color: #e3c05e;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media screen and (max-width: 768px) {
+  .experienceSplitPage {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .experienceRight {
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  .experienceImageRight {
+    max-width: 90%;
+  }
+}
