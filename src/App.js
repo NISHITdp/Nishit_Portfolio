@@ -15,6 +15,7 @@ import Dining from "./pages/Dining";
 import TeachingAssistant from "./pages/TeachingAssistant";
 import GraduateResearchAssistant from "./pages/ResearchAssistant";
 import SalesforceDeveloper from "./pages/SalesforceDeveloper";
+import SherwinWilliams from "./pages/SherwinWilliams";
 
 import CourseProjects from "./pages/CourseProjects";
 
@@ -39,6 +40,7 @@ function App() {
         <Route path="/experience/recroom" element={<RecRoom />} />
         <Route path="/experience/multimedia" element={<Multimedia />} />
         <Route path="/experience/dining" element={<Dining />} />
+        <Route path="/experience/sherwin-williams" element={<SherwinWilliams />} />
         <Route path="/experience/teachingassistant" element={<TeachingAssistant />} />
         <Route path="/experience/researchassistant" element={<GraduateResearchAssistant />} />
         <Route path="/experience/salesforcedeveloper" element={<SalesforceDeveloper />} />

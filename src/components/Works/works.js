@@ -8,33 +8,64 @@ import WorkEx5 from '../../assets/WE5.png';
 import WorkEx6 from '../../assets/WE6.png';
 import WorkEx7 from '../../assets/WE7.png';
 import WorkEx8 from '../../assets/WE8.png';
+import BIG from '../../assets/BIG.jpeg';
+import ischool from '../../assets/ischool.jpeg';
+import gies from '../../assets/gies.png';
 
 const Works = () => {
     return(
         <section id="works">
             <h2 className="worksTitle">My <span style={{ color: "#CBA135" }}>Experience</span></h2>
             <span className="workDesc">My experiences have been the cornerstone of my personal and professional growth — shaping the individual I am today. From learning soft skills and resilience through part-time campus jobs to gaining technical and corporate expertise through internships, research roles and full time corporate jobs, each opportunity has contributed meaningfully to my development.</span>
-            <h3 className="worksSubheading">Full-Time & Internship Roles</h3>
+            <h3 className="worksSubheading">Professional Experience — Full Time • Internships • Campus</h3>
             <div className="worksCards">
                 <div className="workCard">
                     <div className="workCardImgWrapper">
                         <img src={WorkEx1} alt="Sherwin Williams" />
                     </div>
-                    <span className="workTitle">R&D Data Science Intern <br /> <span style={{ fontSize: "1rem" }}>May 2025 - Present</span> </span>
+                    <span className="workTitle">R&D Data Science Intern / Co-op  <br /> <span style={{ fontSize: "1rem" }}>May 2025 - Present</span> </span>
+                    <button className="workBtn" onClick={() => window.location.href = '/experience/sherwin-williams'}>See More</button>
+                </div>
+                <div className="workCard">
+                    <div className="workCardImgWrapper">
+                        <img src={BIG} alt="BIG Consulting" />
+                    </div>
+                    <span className="workTitle">Project Manager at BIG<br /> <span style={{ fontSize: "1rem" }}>August 2025 - Present</span> </span>
                     <button className="workBtn">See More</button>
                 </div>
                 <div className="workCard">
                     <div className="workCardImgWrapper">
-                        <img src={WorkEx2} alt="UIUC TA" />
+                        <img src={gies} alt="UIUC RA III" />
+                    </div>
+                    <span className="workTitle">Graduate Research Assistant III <br /> <span style={{ fontSize: "1rem" }}>Sept 2025 - Present</span> </span>
+                    <button className="workBtn">See More</button>
+                </div>
+                <div className="workCard">
+                    <div className="workCardImgWrapper">
+                        <img src={gies} alt="UIUC RA II" />
+                    </div>
+                    <span className="workTitle">Graduate Research Assistant II <br /> <span style={{ fontSize: "1rem" }}>Sept 2025 - Present</span> </span>
+                    <button className="workBtn">See More</button>
+                </div>
+                <div className="workCard">
+                    <div className="workCardImgWrapper">
+                        <img src={ischool} alt="UIUC GRA" />
+                    </div>
+                    <span className="workTitle">Guided Research Assistant - IS 579 <br /> <span style={{ fontSize: "1rem" }}>Aug 2025 - Present</span> </span>
+                    <button className="workBtn">See More</button>
+                </div>
+                <div className="workCard">
+                    <div className="workCardImgWrapper">
+                        <img src={ischool} alt="UIUC TA" />
                     </div>
                     <span className="workTitle">Graduate Teaching Assistant <br /> <span style={{ fontSize: "1rem" }}>Jan 2025 - May 2025</span></span>
                     <button className="workBtn" onClick={() => window.location.href = '/experience/teachingassistant'}>See More</button>
                 </div>
                 <div className="workCard">
                     <div className="workCardImgWrapper">
-                        <img src={WorkEx3} alt="UIUC RA" />
+                        <img src={ischool} alt="UIUC RA I" />
                     </div>
-                    <span className="workTitle">Graduate Research Assistant <br /> <span style={{ fontSize: "1rem" }}>Jan 2025 - May 2025</span> </span>
+                    <span className="workTitle">Graduate Research Assistant I<br /> <span style={{ fontSize: "1rem" }}>Jan 2025 - May 2025</span> </span>
                     <button className="workBtn" onClick={() => window.location.href = '/experience/researchassistant'}>See More</button>
                 </div>
                 <div className="workCard">
